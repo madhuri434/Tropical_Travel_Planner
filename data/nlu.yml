@@ -1,0 +1,214 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+
+
+- intent: weather_maui
+  examples: |
+    - How is the weather today in maui?
+    - what's the weather in maui?
+    - hows the weather today in maui
+    - how's the weather in maui
+    - how is the weather today in maui
+    - How's the weather today in maui?
+    - weather in maui
+- intent: weather_bigislandhawaii
+  examples: |
+    - How is the weather today in big island hawaii?
+    - what's the weather in big island hawaii?
+    - hows the weather today in big island hawaii
+    - how's the weather in big island hawaii?
+    - weather in big island hawaii
+- intent: monthtovisit
+  examples: |
+    - best month to visit?
+    - which is the best month to visit hawaii?
+    - which month should i plan to visit?
+- intent: hotel
+  examples: |
+    - hotel details in maui?
+    - hotel details in maui
+    - hotels in maui?
+    - hotels in maui
+    - could you suggest any hotel in maui?
+- intent: hotel_bigislandhawaii
+  examples: |
+    - hotel details in big island hawaii
+    - hotel details in big island hawaii?
+    - hotels in big island hawaii?
+    - hotels in big island hawaii
+    - could you suggest any hotel in big island hawaii?
+- intent: activity
+  examples: |
+    - what kind of activity i can do in maui?
+    - i want to make my trip adventurous in maui
+    - where can i book for activity in maui?
+    - how can i make my trip memorable in maui?
+    - activities in maui
+- intent: activity_bigislandhawaii
+  examples: |
+    - what kind of activity i can do in big island hawaii?
+    - i want to make my trip adventurous in big island hawaii
+    - where can i book for activity in big island hawaii?
+    - how can i make my trip memorable in big island hawaii?
+    - activities in big island hawaii
+- intent: foodoptions
+  examples: |
+    - food options in maui
+    - where should i have lunch in maui?
+    - lunch options in maui?
+    - dinner options in maui?
+    - restaurants in maui?
+- intent: foodoptions_bigislandhawaii
+  examples: |
+    - food options in big island hawaii
+    - where should i have lunch in big island hawaii?
+    - lunch options in big island hawaii?
+    - dinner options in big island hawaii?
+    - restaurants in big island hawaii?
+- intent: rentacar
+  examples: |
+    - rent a car in maui
+    - how to rent a car in maui?
+    - i want to rent a car in maui, how can i do it?
+    - how can I rent a car in maui?
+- intent: rentacar_bigislandhawaii
+  examples: |
+    - rent a car in big island hawaii
+    - how to rent a car in big island hawaii?
+    - i want to rent a car in big island hawaii, how can i do it?
+    - how can I rent a car in big island hawaii?
+- intent: travel
+  examples: |
+    - I want to go on a vacation
+    - I am bored
+    - I want to plan a trip
+    - I want to travel in tropical location
+- intent: maui
+  examples: |
+    - I want to go to Maui, could you suggest me things to do?
+    - I want to go to maui
+    - maui
+- intent: bigislandhawaii
+  examples: |
+    - I want to go to big island hawaii, could you suggest me things to do?
+    - I want to go to big island hawaii, any suggestions?
+    - big island hawaii
+- intent: thingstodoinmaui
+  examples: |
+    - What can i do in maui?
+    - What are the things to do in maui?
+    - For maui, What are the things you can help me with?
+    - things to do in maui
+    - things to do in Maui
+    - What do you suggest in maui?
+    - attractions in maui?
+    - what can i do in maui
+    - can you suggest me things to do in maui?
+- intent: thingstodoinisland
+  examples: |
+    - What can i do in big island, hawaii?
+    - What are the things to do in maui?
+    - For big island hawaii,What are the things you can help me with?
+    - things to do in big island, hawaii?
+    - What do you suggest in big island, hawaii?
+    - attractions in big island, hawaii?
+- intent: history
+  examples: |
+    - can you tell me history of maui?
+    - can you tell me history of hawaii?
+    - What is the history of  maui?
+    - What is the history of  hawaii?
+    - history of hawaii?
+    - history of maui?
+    - history of hawaii
+- intent: localfood
+  examples: |
+    - can you tell me local food of maui?
+    - what is the local food of maui?
+    - local food of maui?
+    - can you tell me local food of hawaii?
+    - what is the local food of hawaii?
+    - local food of hawaii?
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Thank you
+    - thank you
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_happy
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- synonym: Maui
+  examples: |
+    - maui
+- synonym: Big Island, Hawaii
+  examples: |
+    - big island, hawaii

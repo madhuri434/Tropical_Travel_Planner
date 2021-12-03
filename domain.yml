@@ -1,0 +1,149 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- maui:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- greet:
+    use_entities: true
+- thingstodoinmaui:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- bigisland:
+    use_entities: true
+- history:
+    use_entities: true
+- localfood:
+    use_entities: true
+- travel:
+    use_entities: true
+- mood_happy:
+    use_entities: true
+- thingstodoinisland:
+    use_entities: true
+- foodoptions:
+    use_entities: true
+- rentacar:
+    use_entities: true
+- hotel:
+    use_entities: true
+- activity:
+    use_entities: true
+- monthtovisit:
+    use_entities: true
+- weather:
+    use_entities: true
+- ? "city\nentities[]\n\nslots{}"
+  : use_entities: true
+- city:
+    use_entities: true
+- ask_weather_location:
+    use_entities: true
+- weather_bigislandhawaii:
+    use_entities: true
+- rentacar_bigislandhawaii:
+    use_entities: true
+- hotel_bigislandhawaii:
+    use_entities: true
+- weather_maui:
+    use_entities: true
+- bigislandhawaii:
+    use_entities: true
+- foodoptions_bigislandhawaii:
+    use_entities: true
+- activity_bigislandhawaii:
+    use_entities: true
+entities: []
+slots:
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - image: https://d361nn0tbycf2u.cloudfront.net/company/aBrAfaL2fXMMkqzcX_c/node/5d398beb380d7b4498b45376/1564052468163_original.jpeg
+    text: Hi 😃! It's your very own Tropical Location trip planner. Here to help you plan your trip to the Sunny Beaches of your choice.
+  utter_travel:
+  - text: I would like to know a little bit about your destination.  Would you like to go to Maui or Big Island Hawaii?
+  utter_thingstodoinmaui:
+  - text: 'Things to do in maui: 1. Road to Hana. 2. Haleakala National Park. 3. Waianapanapa State Park. 4. Pipiwai Trail. 5. Makena Beach State Park. 6. Snorkeling Tours. 7. Wailea Beach. 8. Maui Ocean Center. 9. Banyan Tree Park. 10. West Maui Forest Reserve.'
+  utter_thingstodoinbigislandhawaii:
+  - text: 'Things to do in hawaii: 1. Visit Hawaii Volcanos National Park. 2. Dive with Manta Rays. 3. Visit Hawaii Tropical Botanical Garden. 4. Visit the Seahorse Farm in Kona. 5. See the green and black sand beaches. 6. Take a helicopter tour over an active volcano. 7. Star gaze atop Mauna Kea. 8. Tour a coffee plantation in Kona. 9. Visit Hawaii Volcanoes National Park. 10. Snorkel with Sea Turtles at Tunnels.'
+  utter_localfood:
+  - text: 'Local food you should try in hawaii: 1. Hawaiian Plate 2. All-Natural Shave Ice 3. Strawberry Mochi 4. Coco Puffs 5. Da Hawaiian Acai Bowl 6. Croissada 7. Lomi Lomi Salmon'
+  utter_history:
+  - text: 'Hawaii (Hawaiian: Hawai‘i) is a group of volcanic islands in the central Pacific Ocean. The islands lie 2,397 miles from San Francisco, California, to the east and 5,293 miles from Manila, in the Philippines, to the west. The capital is Honolulu, located on the island of Oahu. The islands were annexed by the United States in 1900, and as a U.S. territory saw population expansion and the establishment of a plantation system for growing sugar cane and pineapples. On the morning of December 7, 1941, hundreds of Japanese fighter planes attacked the American naval base at Pearl Harbor near Honolulu. The surprise attack destroyed nearly 20 vessels, killed more than 2,000 American soldiers and propelled the United States into World War II. Hawaii became the 50th U.S. state on August 21, 1959.'
+  utter_monthtovisit:
+  - text: The best time to visit Hawaii is between March and September. This is when the islands see the highest temperatures and the lowest amount of rain. It is the perfect time to enjoy the beach or the water.
+  utter_hotel:
+  - text: 'Here is link to [hotels](https://www.hotels.com/re1475774/hotels-in-maui-united-states-of-america/) '
+  utter_hotel_bigislandhawaii:
+  - text: 'Here is link to [hotels](https://www.hotels.com/re1642840/hotels-in-hawaii-island-united-states-of-america/) '
+  utter_rentacar:
+  - text: 'Here is link to [rent a car](https://www.kayak.com/Maui-Car-Rentals.f2000138.crr.html) '
+  utter_rentacar_bigislandhawaii:
+  - text: Here is link to [rent a car](https://www.enterprise.com/en/car-rental/locations/us/hi/big-island-hawaii.html)
+  utter_activity:
+  - text: 'Here is link to [activities](https://www.hawaiiactivities.com/en/hawaii/maui/p/106?cid=In_Maui_Dynamic&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI2850iEHbQ9d2EjUihTKgoXbo-EuAlZ1-O1RagU8l81L-xodgkApjcaAqqwEALw_wcB) '
+  utter_activity_bigislandhawaii:
+  - text: Here is link to [activities](https://www.viator.com/Big-Island-of-Hawaii/d669-ttd?m=28353&supag=93803390345&supca=9330394220&supsc=dsa-874657366984&supai=420145271959&supdv=c&supnt=g&suplp=9032187&supli=21144&supti=dsa-874657366984&tsem=true&supci=dsa-874657366984&supap1=&supap2=&gclid=Cj0KCQiA15yNBhDTARIsAGnwe0WLmmPs2k7c1t4EQSHePHdlCXmI7WutFrzGk2T_upM3ZB6Obfd15ewaAg2iEALw_wcB)
+  utter_foodoptions:
+  - text: 'Here is link to [Restaurants](https://www.opentable.com/s?lang=en-us&covers=2&metroId=34&regionIds=66&ref=15181&SP=ppc_g_us_nontm&cmid=9740495494&aid=103375838807&tid=kwd-338317758894&locp=9032187&loci=&mt=b&nw=g&d=c&cid=428365096205&pos=&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI1mHnEjA2RWZ4KQT6iMNPJBauriw20dm4TQFUgfSgAjHAgQM0T4HnAaAjZjEALw_wcB) '
+  utter_foodoptions_bigislandhawaii:
+  - text: Here is link to [Restaurants](https://www.opentable.com/best-hawaii-big-island-restaurants)
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye, Have a nice day!
+  utter_iamabot:
+  - text: I am a tropical location trip planner bot, powered by Rasa.
+  utter_temp_maui:
+  - text: Today's temperature is 23 degree celcius. You can plan for outdoor activities
+  utter_temp_bigislandhawaii:
+  - text: Today's temperature is 28 degree celcius. You can plan for outdoor activities
+actions:
+- utter_greet
+- utter_travel
+- utter_localfood
+- utter_history
+- utter_monthtovisit
+- utter_hotel
+- utter_hotel_bigislandhawaiihotel
+- utter_goodbye
+- utter_rentacar
+- utter_rentacar_bigislandhawaii
+- utter_activity
+- utter_activity_bigislandhawaii
+- utter_foodoptions
+- utter_foodoptions_bigislandhawaii
+- utter_thingstodoinmaui
+- utter_thingstodoinbigislandhawaii
+- utter_temp_maui
+- utter_temp_bigislandhawaii
+- utter_cheer_up
+- utter_happy
+- utter_iamabot
+- action_weather_api
+- utter_weather_bigislandhawaii
+forms: {}
+e2e_actions: []

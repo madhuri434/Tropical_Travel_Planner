@@ -1,0 +1,541 @@
+version: "2.0"
+stories:
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_maui
+  - action: utter_temp_maui
+  - intent: weather_maui
+  - action: utter_temp_maui
+  - intent: weather_bigislandhawaii
+  - action: utter_temp_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_maui
+  - action: utter_temp_maui
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: weather_maui
+  - action: utter_temp_maui
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: history
+  - action: utter_history
+  - intent: localfood
+  - action: utter_localfood
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: hotel
+  - action: utter_hotel
+  - intent: activity
+  - action: utter_activity
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: rentacar
+  - action: utter_rentacar
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: localfood
+  - action: utter_localfood
+  - intent: history
+  - action: utter_history
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: happy path 9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: localfood
+  - action: utter_localfood
+  - intent: hotel
+  - action: utter_hotel_bigislandhawaii
+  - intent: foodoptions
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+- story: happy path 11
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 12
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+- story: happy path 13
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 14
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: foodoptions_bigislandhawaii
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: hotel_bigislandhawaii
+  - action: utter_hotel_bigislandhawaii
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 15
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: foodoptions_bigislandhawaii
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: hotel_bigislandhawaii
+  - action: utter_hotel_bigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 16
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: hotel_bigislandhawaii
+  - action: utter_hotel_bigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: foodoptions_bigislandhawaii
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+
+- story: happy path 17
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: weather_bigislandhawaii
+  - action: utter_weather_bigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: foodoptions_bigislandhawaii
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 18
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: weather_bigislandhawaii
+  - action: utter_weather_bigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 19
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: foodoptions_bigislandhawaii
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 20
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: localfood
+  - action: utter_localfood
+  - intent: foodoptions_bigislandhawaii
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 21
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: bigislandhawaii
+  - action: utter_thingstodoinbigislandhawaii
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: localfood
+  - action: utter_localfood
+  - intent: activity_bigislandhawaii
+  - action: utter_activity_bigislandhawaii
+  - intent: foodoptions_bigislandhawaii
+  - action: utter_foodoptions_bigislandhawaii
+  - intent: history
+  - action: utter_history
+  - intent: hotel_bigislandhawaii
+  - action: utter_hotel_bigislandhawaii
+  - intent: rentacar_bigislandhawaii
+  - action: utter_rentacar_bigislandhawaii
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 22
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: localfood
+  - action: utter_localfood
+  - intent: activity
+  - action: utter_activity
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: history
+  - action: utter_history
+  - intent: hotel
+  - action: utter_hotel
+  - intent: rentacar
+  - action: utter_rentacar
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 23
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: activity
+  - action: utter_activity
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: localfood
+  - action: utter_localfood
+  - intent: history
+  - action: utter_history
+  - intent: hotel
+  - action: utter_hotel
+  - intent: rentacar
+  - action: utter_rentacar
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 24
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: activity
+  - action: utter_activity
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: monthtovisit
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 25
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: rentacar
+  - action: utter_rentacar
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 26
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: localfood
+  - action: utter_localfood
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 27
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_weather_location
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: thingstodoinmaui
+  - action: utter_thingstodoinmaui
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID f430315ca9454aa393f949e86d3b8470
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: localfood
+  - action: utter_localfood
+  - intent: history
+  - action: utter_history
+
+- story: Story from Conversation ID d544d5708f864208870c26b640100c7e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: affirm
+  - action: utter_greet
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: history
+  - action: utter_history
+  - intent: localfood
+  - action: utter_localfood
+  - intent: monthtovisit
+  - action: utter_monthtovisit
+  - intent: hotel
+  - action: utter_hotel
+  - intent: activity
+  - action: utter_activity
+  - intent: rentacar
+  - action: utter_rentacar
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 9d10bace9ff04d8890c98c7ff069b940
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: localfood
+  - action: utter_localfood
+  - intent: rentacar
+  - action: action_default_fallback
+  - intent: rentacar
+  - action: utter_rentacar
+  - intent: foodoptions
+  - action: action_default_fallback
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_restart
+
+- story: Story from Conversation ID 3006fa2df5f1420681238abc532d61a1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: travel
+  - action: utter_travel
+  - intent: maui
+  - action: utter_thingstodoinmaui
+  - intent: rentacar
+  - action: utter_rentacar
+  - intent: foodoptions
+  - action: action_default_fallback
+  - intent: foodoptions
+  - action: utter_foodoptions
+  - intent: history
+  - action: utter_history
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
